@@ -4,8 +4,8 @@ import styled from 'styled-components/macro';
 export function Logo() {
   return (
     <Wrapper>
-      <Title>React Boilerplate</Title>
-      <Description>Create React App Template</Description>
+      <Title>코딩 알고리즘</Title>
+      <Description>겸사겸사 만들어보자</Description>
     </Wrapper>
   );
 }
