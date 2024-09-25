@@ -11,6 +11,7 @@ import 'react-app-polyfill/stable';
 import * as React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
+import FontFaceObserver from 'fontfaceobserver';
 
 // Use consistent styling
 import 'sanitize.css/sanitize.css';
@@ -28,6 +29,18 @@ import reportWebVitals from 'reportWebVitals';
 
 // Initialize languages
 import './locales/i18n';
+
+// Observe loading of Inter (to remove 'Inter', remove the <link> tag in
+// the index.html file and this observer)
+const openSansObserver = new FontFaceObserver('Inter', {});
+
+// openSansObserver.load()
+//   .then(() => {
+//     document.body.classList.add('fontLoaded');
+//   })
+//   .catch((e) => {
+//     console.error(e)
+//   });
 
 const store = configureAppStore();
 const root = ReactDOM.createRoot(

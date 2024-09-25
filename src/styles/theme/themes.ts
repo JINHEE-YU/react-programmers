@@ -6,6 +6,7 @@ const lightTheme = {
   backgroundVariant: 'rgba(251,249,249,1)',
   border: 'rgba(58,52,51,0.12)',
   borderLight: 'rgba(58,52,51,0.05)',
+  backgroundHover: 'rgba(215,113,88,0.2)',
 };
 
 const darkTheme: Theme = {
@@ -16,6 +17,7 @@ const darkTheme: Theme = {
   backgroundVariant: 'rgba(28,26,26,1)',
   border: 'rgba(241,233,231,0.15)',
   borderLight: 'rgba(241,233,231,0.05)',
+  backgroundHover: 'rgba(220,120,95,0.2)',
 };
 
 export type Theme = typeof lightTheme;
